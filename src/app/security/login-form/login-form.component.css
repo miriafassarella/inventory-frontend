@@ -1,0 +1,43 @@
+.container{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #64646b;
+}
+
+.grid{
+  background-color: white;
+  width: 22rem;
+  height: 18rem;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+button{
+  background-color: #191970;
+}
+
+.passcheck{
+  display: flex;
+  justify-content: space-between;
+}
+
+.link{
+  margin-top: 6px;
+}
+
+i{
+  padding-right: 6px;
+}
+
+a{
+  color: #64646b;
+  text-decoration: none;
+}
+
+col-12,h2{
+  text-align: left;
+}
