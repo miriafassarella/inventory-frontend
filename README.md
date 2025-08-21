@@ -2,7 +2,7 @@
 
 Ce projet est le front-end de l’application de gestion d’inventaire, développé avec Angular et PrimeNG. Il permet aux utilisateurs de gérer les produits, les affecter à des professionnels et générer des rapports PDF.
 
-🔗 Voir également : [Back-end (Spring Boot)](https://github.com/miriafassarella/inventory)
+🔗 Voir également : [Back-end (Spring Boot)](https://github.com/miriafassarella/inventory-backend)
 
 ---
 
