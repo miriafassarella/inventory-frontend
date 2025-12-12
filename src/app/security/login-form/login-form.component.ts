@@ -32,15 +32,14 @@ export class LoginFormComponent implements OnInit {
     }
   }
 
-  onLogin() {
-    if (this.lembrarMe) {
+  login(usuario: string, senha: string) {
+    //usado para guradar o email
+     if (this.lembrarMe) {
       localStorage.setItem('email', this.email); // Salva o e-mail
     } else {
       localStorage.removeItem('email'); // Remove o e-mail salvo se desmarcar
     }
-  }
-
-  login(usuario: string, senha: string) {
+    //guarda o email -------------------
     this.auth.login(usuario, senha)
       .then(() => {
         this.router.navigate(['/inventaire']);
