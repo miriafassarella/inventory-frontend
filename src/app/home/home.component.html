@@ -234,7 +234,7 @@
       </ng-template>
     </p-table>
     <ng-template pTemplate="footer">
-      <p-button icon="pi pi-print " label="Générer une étiquette" routerLink="/barcode"
+      <p-button icon="pi pi-print " label="Générer une étiquette" (onClick)="ouvreEtiquette()"
         styleClass="p-button-text"></p-button>
     </ng-template>
   </p-dialog>

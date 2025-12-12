@@ -147,6 +147,23 @@ export class HomeComponent implements OnInit {
     });
   }
 
+  ouvreEtiquette() {
+    
+    if (this.product.serialNumber != null) {
+
+      this.productService.etiquettePdf(this.product.serialNumber).subscribe({
+    next: (pdf: Blob) => {
+      const blob = new Blob([pdf], { type: 'application/pdf' });
+      const url = URL.createObjectURL(blob);
+      window.open(url, '_blank');
+},
+    });
+    }
+  }
+
+
+
+
   addProduct() {
     if (this.modelSelected) {
       this.productService.addProduct(this.AjoutProduct)

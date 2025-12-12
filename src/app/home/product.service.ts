@@ -31,6 +31,8 @@ export class ProductService {
   professionalsUrl = 'http://localhost:8080/professionals';
   usabilitiesUrl = 'http://localhost:8080/usabilities';
   ownersUrl = 'http://localhost:8080/owners';
+  pdfEtiqueta = 'http://localhost:8080/products/etiqueta';
+
 
   constructor(private http: HttpClient) { }
 
@@ -59,6 +61,14 @@ export class ProductService {
     }
     return this.http.get(this.apiUrl, { params: params, responseType: 'blob' }); // 'blob' para lidar com arquivos binários
   }
+
+   etiquettePdf(sNumber: string){
+       
+    return this.http.get(`${this.pdfEtiqueta}/${sNumber}`, {
+     responseType: 'blob'
+  });
+  }
+
 
   listWhitCriteria(filter: ProductsFilter): Promise<any> {
 
