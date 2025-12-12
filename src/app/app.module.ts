@@ -43,6 +43,7 @@ import { UsabilityComponent } from './usability/usability.component';
 import { ModelComponent } from './model/model.component';
 
 const routes: Routes = [
+  { path: '', redirectTo: 'login', pathMatch: 'full' },
   { path: 'login', component: LoginFormComponent },
   { path: 'inventaire', component: HomeComponent },
   { path: 'barcode', component: BarcodeComponent },
