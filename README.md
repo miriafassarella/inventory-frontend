@@ -24,7 +24,6 @@ Ce projet est le front-end de l’application de gestion d’inventaire, dévelo
 - Création, modification, suppression de produits
 - Affectation des produits à des utilisateurs
 - Génération de PDF multi-pages
-- Réinitialisation de mot de passe
 - Interface responsive avec filtres et pagination
 
 ---
